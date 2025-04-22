@@ -9,7 +9,7 @@ Você está encarregado de configurar e gerenciar um **servidor Ubuntu Server** 
 
 ## **1. Instalando e configurando serviços essenciais**  
 
-🔹 Instale os seguintes pacotes no sistema usando o **APT**: **SSH, SFTP, Nginx, Cron, vim, Postfix e MariaDB**.  
+🔹 Instale os seguintes pacotes no sistema usando o **apt install**: **SSH, SFTP, Nginx, Cron, vim, Postfix e MariaDB**.  
 📸 **Envie um print mostrando que os pacotes foram instalados corretamente.**  
 
 🔹 Agora, instale o programa **htop** de forma manual, utilizando o **DPKG**. O HTOP permite monitorar processos do sistema e não possui dependências complexas. Para isso, acesse um site confiável como **pkgs.org**, baixe o pacote `.deb` e instale-o.  
@@ -18,7 +18,7 @@ Você está encarregado de configurar e gerenciar um **servidor Ubuntu Server** 
 🔹 Instale o pacote **htop** manualmente com **dpkg** e confirme se a instalação foi bem-sucedida.  
 📸 **Envie um print mostrando que o programa foi instalado corretamente.**  
 
-🔹 Verifique se os pacotes instalados aparecem na listagem do sistema.  
+🔹 Verifique se os pacotes instalados (tantos os que foram instalados via apt, quanto o via dpkg) aparecem na listagem do sistema, envie também qual a **versão** instalada de cada pacote.  
 📸 **Envie um print mostrando a listagem dos pacotes instalados.**  
 
 ---
