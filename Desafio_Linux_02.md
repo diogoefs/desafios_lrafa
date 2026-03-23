@@ -141,3 +141,248 @@ Você está encarregado de configurar e gerenciar um **servidor Ubuntu Server** 
 🎉 Parabéns! Você configurou o servidor, monitorou processos, gerenciou usuários e acessou remotamente seu ambiente Linux!  😃🚀
 
 ---
+
+
+
+
+
+######### GABARITO
+
+
+
+Claro! Aqui estão as respostas para cada etapa do desafio, com os comandos que Rafael deve executar:
+
+---
+
+### **1. Instalando e configurando serviços essenciais**  
+```bash
+sudo apt update  
+sudo apt install openssh-server openssh-client nginx cron postfix mariadb-server -y  
+```
+```bash
+wget http://ftp.us.debian.org/debian/pool/main/h/htop/htop_3.2.2-1_amd64.deb  
+sudo dpkg -i htop_3.2.2-1_amd64.deb  
+```
+```bash
+dpkg --list | grep -E 'openssh|nginx|cron|postfix|mariadb|htop'
+```
+
+---
+
+### **2. Monitoramento e encerramento de processos**  
+```bash
+ps aux | grep nginx  
+ps aux | grep mariadb  
+ps aux | grep postfix  
+```
+```bash
+sudo kill PID  
+```
+```bash
+ps aux | grep vim  
+sudo kill PID  
+```
+
+---
+
+### **3. Gerenciando múltiplos processos**  
+```bash
+sudo killall mariadb  
+```
+```bash
+top  
+htop  
+```
+```bash
+ps aux | grep developer  
+```
+
+---
+
+### **4. Trabalhando com processos em segundo plano**  
+```bash
+vim meuarquivo.txt &  
+jobs  
+```
+```bash
+fg %1  
+```
+```bash
+pstree -p  
+```
+
+---
+
+### **5. Criando scripts e permissões de execução**  
+```bash
+echo 'echo "Bem-vindo ao servidor!"' > setup.sh  
+chmod +x setup.sh  
+./setup.sh  
+```
+```bash
+chmod 755 setup.sh  
+```
+```bash
+sudo mv setup.sh /usr/local/bin/  
+export PATH=$PATH:/usr/local/bin/  
+```
+
+---
+
+### **6. Buscando arquivos importantes no sistema**  
+```bash
+sudo updatedb  
+```
+```bash
+locate nginx.conf  
+```
+```bash
+locate *.log  
+```
+
+---
+
+### **7. Criando e controlando usuários**  
+```bash
+sudo adduser developer  
+```
+```bash
+su - developer  
+```
+```bash
+sudo systemctl restart nginx  
+```
+
+---
+
+### **8. Manipulando permissões de arquivos**  
+```bash
+touch /home/developer/config.cfg  
+chmod 600 /home/developer/config.cfg  
+```
+```bash
+sudo groupadd dev_team  
+sudo usermod -aG dev_team developer  
+```
+```bash
+sudo chown :dev_team /home/developer  
+chmod 770 /home/developer  
+```
+
+---
+
+### **9. Configurando acesso remoto e transferências de arquivos**  
+```bash
+sudo systemctl enable ssh  
+sudo systemctl start ssh  
+```
+```bash
+ssh localhost  
+```
+```bash
+scp arquivo.txt localhost:/home/developer/  
+```
+
+---
+
+### **10. Configurando serviços para iniciar automaticamente**  
+```bash
+sudo systemctl enable nginx  
+sudo systemctl enable postfix  
+sudo systemctl enable mariadb  
+```
+```bash
+sudo reboot  
+systemctl status nginx  
+systemctl status postfix  
+systemctl status mariadb  
+```
+
+---
+
+Isso cobre todas as etapas do desafio com os comandos corretos! Se precisar de ajustes ou quiser incluir algum detalhe extra, me avise! 🚀😃
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Proximos cursos/conteúdos a serem estudados:
+
+vi/vim:
+https://cursos.alura.com.br/course/linux-ubuntu/task/3367
+
+
+
+DevOps
+
+
+https://cursos.alura.com.br/formacao-primeiros-passos-devops?preRequirementFrom=sre
+
+
+
+
+*Próximos passos, exatamente nesta ordem:*
+
+1 - Ler o artigo sobre HTTP (possui um video de aproximadamente 10min na mesma página):
+
+Ps: O video pode ser que que te confunda um pouco, pq em alguns momentos eles aprofundam demais... Mas não se preocupe, siga...
+
+- https://www.alura.com.br/artigos/http 
+
+
+
+2 - Curso sobre servidor/serviço web (Focado em NGINX)
+
+Ps: Mesmo o instrutor dizendo que o pré-requisito é ter feito um outro curso HTTP, ignore essa informação, depois te explico o motivo...
+
+- https://cursos.alura.com.br/course/nginx-servidor-web-proxy-reverso-api-gateway
+
+
+
+3 - Por fim, um mais aprofundado onde, vou te introduzir com mais foco em alguns protocolos de rede e seus respectivos serviços (focados em linux)
+
+- https://cursos.alura.com.br/course/devops-trafego-seguro-comunicacoes-webs
+
+
+
+REDES:
+
+1 - https://cursos.alura.com.br/course/redes-conceitos-iniciais-criacao-intranet
+2 - https://cursos.alura.com.br/course/redes-onboarding-rede-forma-pratica/task/106438
+
+
+
+
+Cloud:
+- https://cursos.alura.com.br/course/cloud-usando-aws-explorando-recursos-nuvem-servico
+- https://cursos.alura.com.br/course/amazon-vpc-configurando-redes-aws
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
