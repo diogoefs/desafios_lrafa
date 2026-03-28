@@ -1,4 +1,4 @@
-Tópicos Essenciais AWS para SRE/DevOps Iniciantes
+# Tópicos Essenciais AWS para SRE/DevOps Iniciantes (Teorica - PDF Oficial da AWS)
 
 O que NÃO priorizar no início
 
