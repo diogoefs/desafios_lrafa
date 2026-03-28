@@ -77,3 +77,17 @@ AWS CodePipeline / CodeBuild / CodeDeploy – CI/CD.
 AWS Systems Manager – Gerenciamento de instâncias.
 
 ---
+
+## 8 - Video Aulas:
+
+
+- Conceitos gerais e uma degustação dos principais serviços para iniciantes)
+https://www.youtube.com/watch?v=eWfKQsXb3Ds
+
+
+- FUNDAMENTOS AWS que eu acho que vai ajudar a FIXAR melhor os conceitos téoricos lidos no PDF
+https://youtube.com/playlist?list=PLtL97Owd1gkQ0dfqGW8OtJ-155Gs67Ecz&si=H-jZH3FwdYCj8bc_
+
+
+- Playlist com curso totalmente "Mão-na-massa" de AWS para iniciantes
+https://www.youtube.com/playlist?list=PLOF5f9_x-OYUaqJar6EKRAonJNSHDFZUm
