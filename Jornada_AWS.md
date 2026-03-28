@@ -8,6 +8,8 @@ IoT (IoT Core, Greengrass, etc.)
 
 Blockchain (Amazon Managed Blockchain)
 
+Tópicos Essenciais
+
 1. Fundamentos da Computação em Nuvem
 
 O que é computação em nuvem?
